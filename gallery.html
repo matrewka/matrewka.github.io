@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Cover Template for Bootstrap</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/fluid-gallery.css">
+    <link href="css/cover.css" rel="stylesheet">
+    <!-- <link href="css/album.css" rel="stylesheet"> -->
+
+
+</head>
+
+<body>
+<!-- 
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner"> -->
+    <div class="cover-back bg-inverse" >
+    <div class="cover-container">
+      <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">@matrew.ka</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link" href="index.html">Главная</a>
+                <a class="nav-link  active" href="gallery.html">Галерея</a>
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </nav>
+            </div>
+          </div>
+          </div>
+    </div>
+
+      <div class="album">
+      <div class="container">
+            <div class="row" id="gallery">
+            </div>
+            </div>
+      </div>
+
+      <footer class="text-muted  bg-inverse">
+         <div class="container">
+           <p class="float-right">
+             <a href="#">На верх</a>
+           </p>
+           <p>Album example is &copy; Bootstrap, but pldownload and customize it for yourself!</p>
+           <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+         </div>
+      </footer>
+    </div>
+
+
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script>
+    var str = "";
+    for (var pic = 1; pic < 41; pic++){
+        str += '<div class="col-sm-12 col-md-3"><a class="lightbox" href="pic/'+pic+'.jpg"><img src="pic/'+pic+'.jpg" alt="Bridge"></a></div>'
+
+    }
+
+        document.getElementById('gallery').innerHTML = str
+
+        baguetteBox.run('.album');
+    </script>
+  </body>
+</html>
